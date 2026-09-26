@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101c2c">
+<meta name="description" content="Proposal Investasi dan Pembangunan Cosdotel Foresyndo 2 oleh PT Foresyndo Global Indonesia.">
+<title>Cosdotel Foresyndo 2 | Proposal Investasi</title>
+
+<style>
+:root {
+  --navy:#101c2c;
+  --navy2:#192b42;
+  --gold:#c8a45d;
+  --gold-light:#e9d6a6;
+  --cream:#f8f6f0;
+  --white:#fff;
+  --text:#263449;
+  --muted:#738093;
+  --green:#16865d;
+  --border:#e4e8ed;
+  --shadow:0 15px 45px rgba(16,28,44,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  font-family:Inter,Arial,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.7;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.container{width:min(1160px,92%);margin:auto}
+nav{
+  background:rgba(16,28,44,.97);
+  color:white;position:sticky;top:0;z-index:100;
+  border-bottom:1px solid #ffffff20;
+}
+.nav-inner{
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.brand-icon{
+  width:42px;height:42px;border:1px solid var(--gold);
+  color:var(--gold);display:grid;place-items:center;
+  border-radius:10px;font-size:21px;
+}
+.brand small{display:block;font-size:10px;color:var(--gold-light);letter-spacing:1.5px}
+.nav-links{display:flex;gap:23px;font-size:13px;color:#e1e6ef}
+.nav-links a:hover{color:var(--gold)}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{
+  background:linear-gradient(120deg,rgba(9,19,32,.96),rgba(13,36,57,.76)),
+  url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85') center/cover;
+  color:white;min-height:650px;display:flex;align-items:center;
+  padding:90px 0;position:relative;overflow:hidden;
+}
+.hero:after{
+  content:"";position:absolute;width:480px;height:480px;
+  border:1px solid #c8a45d30;border-radius:50%;
+  right:-160px;bottom:-250px;
+}
+.eyebrow{
+  color:var(--gold-light);font-size:12px;font-weight:700;
+  letter-spacing:3px;text-transform:uppercase;
+}
+.hero h1{
+  font-size:clamp(38px,6vw,72px);line-height:1.08;
+  margin:25px 0;font-weight:800;max-width:850px;
+}
+.hero h1 span{color:var(--gold-light)}
+.hero p{max-width:680px;color:#d1dae5;font-size:17px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.btn{
+  padding:14px 24px;border-radius:7px;border:1px solid transparent;
+  font-size:14px;font-weight:700;display:inline-flex;
+  align-items:center;justify-content:center;gap:8px;
+}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-outline{border-color:#ffffff65;color:white}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.hero-meta{display:flex;gap:30px;flex-wrap:wrap;margin-top:55px}
+.hero-meta div{border-left:2px solid var(--gold);padding-left:15px}
+.hero-meta strong{display:block;font-size:20px}
+.hero-meta small{color:#b9c5d2;font-size:12px}
+section{padding:90px 0}
+.section-tag{
+  color:#a17b34;font-size:12px;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;
+}
+.section-title{
+  color:var(--navy);font-size:clamp(28px,4vw,43px);
+  line-height:1.2;margin-bottom:18px;
+}
+.section-desc{color:var(--muted);max-width:750px;margin-bottom:35px}
+.section-head{margin-bottom:35px}
+.stats{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:18px;margin-top:-48px;position:relative;z-index:2;
+}
+.stat{
+  background:white;padding:28px 23px;border-radius:12px;
+  box-shadow:var(--shadow);border-bottom:3px solid var(--gold);
+}
+.stat small{color:var(--muted);font-size:12px}
+.stat strong{display:block;color:var(--navy);font-size:clamp(21px,2.6vw,30px);margin:8px 0}
+.stat span{color:var(--muted);font-size:12px}
+.about-grid,.two-col{
+  display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;
+}
+.about-image{
+  min-height:450px;border-radius:16px;
+  background:url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1100&q=85') center/cover;
+  box-shadow:var(--shadow);position:relative;
+}
+.image-label{
+  position:absolute;bottom:20px;left:20px;right:20px;
+  background:#101c2ce8;color:white;padding:18px;border-radius:8px;
+}
+.image-label strong{color:var(--gold-light);display:block}
+.check-list{list-style:none;margin:25px 0}
+.check-list li{padding:9px 0 9px 30px;position:relative}
+.check-list li:before{
+  content:"✓";position:absolute;left:0;color:var(--green);font-weight:900
+}
+.dark-section{background:var(--navy);color:white}
+.dark-section .section-title{color:white}
+.dark-section .section-desc{color:#aebccc}
+.dark-section .section-tag{color:var(--gold-light)}
+.floor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.floor{
+  border:1px solid #ffffff20;background:#ffffff08;
+  border-radius:12px;padding:25px;
+}
+.floor .number{color:var(--gold);font-size:13px;font-weight:800;letter-spacing:1px}
+.floor h3{font-size:19px;margin:10px 0;color:white}
+.floor p{font-size:14px;color:#b9c5d2}
+.floor strong{display:block;color:var(--gold-light);margin-top:16px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery img{width:100%;height:250px;object-fit:cover;border-radius:12px}
+.gallery .wide{grid-column:span 2}
+.capex-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:white}
+table{width:100%;border-collapse:collapse;min-width:700px;font-size:13px}
+th{background:var(--navy);color:white;text-align:left;padding:16px}
+td{padding:15px;border-bottom:1px solid var(--border)}
+tbody tr:hover{background:#faf7ef}
+td:last-child,th:last-child{text-align:right}
+tfoot{font-weight:800;background:#f6f0e2}
+tfoot td{color:var(--navy);padding:20px}
+.note{font-size:12px;color:var(--muted);margin-top:15px}
+.chart-box{
+  background:white;border-radius:14px;padding:25px;
+  box-shadow:var(--shadow);margin-top:30px;
+}
+.chart-box h3{color:var(--navy);margin-bottom:20px}
+.bars{display:flex;align-items:end;gap:14px;height:230px;border-bottom:1px solid var(--border);padding:0 10px}
+.bar-col{flex:1;height:100%;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:8px}
+.bar{
+  width:min(65px,80%);background:linear-gradient(180deg,var(--gold),#a27b37);
+  border-radius:6px 6px 0 0;position:relative;min-height:5px;
+}
+.bar-value{font-size:11px;font-weight:800;color:var(--navy)}
+.bar-label{font-size:12px;color:var(--muted);margin-top:10px}
+.fin-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.fin-card{background:white;padding:26px;border-radius:12px;border:1px solid var(--border)}
+.fin-card small{color:var(--muted)}
+.fin-card strong{display:block;font-size:29px;color:var(--green);margin:10px 0}
+.fin-card p{font-size:12px;color:var(--muted)}
+.sensitivity{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.scenario{border-radius:12px;padding:30px;background:white;border:1px solid var(--border)}
+.scenario.highlight{border:2px solid var(--gold);background:#fffdf8}
+.scenario h3{color:var(--navy);margin-bottom:20px}
+.scenario-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:13px}
+.scenario-row strong{text-align:right}
+.notice{background:#fff6df;border-left:4px solid var(--gold);padding:20px;border-radius:6px;font-size:13px;margin-top:25px}
+.timeline{border-left:2px solid var(--gold);margin-left:12px;padding-left:28px}
+.timeline-item{position:relative;margin-bottom:28px}
+.timeline-item:before{
+  content:"";position:absolute;width:12px;height:12px;
+  border-radius:50%;background:var(--gold);left:-35px;top:7px
+}
+.timeline-item h3{font-size:17px;color:var(--navy)}
+.timeline-item p{font-size:14px;color:var(--muted)}
+.risk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.risk{background:white;border:1px solid var(--border);padding:22px;border-radius:10px}
+.risk h3{font-size:16px;color:var(--navy);margin-bottom:8px}
+.risk p{font-size:13px;color:var(--muted)}
+.contact{
+  background:linear-gradient(130deg,var(--navy),#213c58);
+  color:white;border-radius:18px;padding:55px;
+  display:flex;align-items:center;justify-content:space-between;gap:30px;
+}
+.contact h2{font-size:30px;margin-bottom:10px}
+.contact p{color:#bac8d8}
+footer{background:#0a1421;color:#bac5d1;padding:35px 0;font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer strong{color:white}
+footer a{color:var(--gold-light)}
+@media(max-width:850px){
+  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;
+    background:var(--navy);padding:20px;flex-direction:column}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .about-grid,.two-col{grid-template-columns:1fr;gap:30px}
+  .floor-grid{grid-template-columns:repeat(2,1fr)}
+  .fin-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery .wide{grid-column:span 2}
+  .contact{padding:35px;flex-direction:column;align-items:flex-start}
+}
+@media(max-width:520px){
+  section{padding:60px 0}
+  .hero{min-height:590px;padding:65px 0}
+  .hero-meta{gap:18px}
+  .floor-grid,.sensitivity,.risk-grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery .wide{grid-column:auto}
+  .gallery img{height:230px}
+  .stat{padding:20px 15px}
+  .contact{padding:25px}
+}
+@media print{
+  nav,.hero-buttons,.menu-btn,.no-print{display:none!important}
+  body{background:white}
+  section{padding:30px 0;break-inside:avoid}
+  .hero{min-height:auto;padding:50px 0}
+  .stats{margin-top:0}
+  .stat,.floor,.fin-card,.scenario,.risk{box-shadow:none;break-inside:avoid}
+  .container{width:95%}
+  footer{background:white;color:#333}
+  footer strong{color:#111}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="brand" href="#home">
+      <div class="brand-icon">F2</div>
+      <div>FORESYNDO <small>GLOBAL INDONESIA</small></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#tentang">Profil</a>
+      <a href="#konsep">Konsep</a>
+      <a href="#capex">Anggaran</a>
+      <a href="#keuangan">Keuangan</a>
+      <a href="#risiko">Risiko</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()" aria-label="Buka menu">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <div class="eyebrow">Investment & Development Proposal • 2026</div>
+    <h1>COSDOTEL<br><span>FORESYNDO 2</span></h1>
+    <p>
+      Pengembangan hotel komersial modern dengan 85 kamar,
+      fasilitas bisnis, restoran, dan infrastruktur terintegrasi
+      di Jatitujuh, Kabupaten Majalengka.
+    </p>
+    <div class="hero-buttons">
+      <a href="#capex" class="btn btn-gold">Lihat Anggaran Proyek ↗</a>
+      <button class="btn btn-outline" onclick="window.print()">Cetak / Simpan PDF</button>
+    </div>
+    <div class="hero-meta">
+      <div><strong>Rp21 Miliar</strong><small>Total CAPEX</small></div>
+      <div><strong>85 Keys</strong><small>Kapasitas kamar</small></div>
+      <div><strong>1 + 7</strong><small>Basement + lantai atas</small></div>
+      <div><strong>400 m²</strong><small>Luas lahan sesuai data anggaran</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="stats">
+    <div class="stat"><small>INVESTASI PROYEK</small><strong>Rp21 M</strong><span>USD 1.272.727</span></div>
+    <div class="stat"><small>ADR TARGET</small><strong>Rp380 rb</strong><span>Per kamar per malam</span></div>
+    <div class="stat"><small>OKUPANSI STABIL</small><strong>75%</strong><span>Target mulai Tahun 3</span></div>
+    <div class="stat"><small>KAMAR HOTEL</small><strong>85</strong><span>10 Superior + 75 Standard</span></div>
+  </div>
+</div>
+
+<section id="tentang">
+  <div class="container about-grid">
+    <div>
+      <div class="section-tag">01 — Profil Proyek</div>
+      <h2 class="section-title">Investasi Properti & Hospitality Terintegrasi</h2>
+      <p class="section-desc">
+        PT. Foresyndo Global Indonesia merencanakan pembangunan
+        Cosdotel Foresyndo 2 sebagai aset usaha akomodasi komersial
+        dengan fasilitas penginapan, bisnis, dan food & beverage.
+      </p>
+      <ul class="check-list">
+        <li>Hotel komersial dengan 1 basement dan 7 lantai atas tanah.</li>
+        <li>85 kamar operasional dengan kamar mandi dalam.</li>
+        <li>Kafe dan restoran komersial berkapasitas 50 kursi.</li>
+        <li>Dua ruang pertemuan modular dengan kapasitas gabungan 60 orang.</li>
+        <li>Dua lift penumpang dan sistem MEP terintegrasi.</li>
+      </ul>
+    </div>
+    <div class="about-image">
+      <div class="image-label">
+        <strong>PT. FORESYNDO GLOBAL INDONESIA</strong>
+        Direktur Utama: Hasanudin
+        <br>Blok Senin, Desa Jatitujuh, Majalengka
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="konsep">
+  <div class="container">
+    <div class="section-tag">02 — Konsep Arsitektur</div>
+    <h2 class="section-title">Zonasi Bangunan</h2>
+    <p class="section-desc">
+      Pemanfaatan ruang vertikal untuk memaksimalkan kapasitas kamar,
+      fasilitas komersial, dan kebutuhan operasional hotel.
+    </p>
+    <div class="floor-grid">
+      <div class="floor">
+        <div class="number">BASEMENT / B1</div>
+        <h3>Parkir & Utilitas</h3>
+        <p>Parkir kendaraan, genset 150 kVA, STP, GWT 50 m³, sump pit, LVMDP, dan fasilitas staf.</p>
+        <strong>±280 m²</strong>
+      </div>
+      <div class="floor">
+        <div class="number">LEVEL 1</div>
+        <h3>Lobby & Komersial</h3>
+        <p>Resepsionis, lounge, restoran 50 kursi, dapur, back-office, toilet umum, lift, dan tangga darurat.</p>
+        <strong>±260 m²</strong>
+      </div>
+      <div class="floor">
+        <div class="number">LEVEL 2</div>
+        <h3>Superior & Meeting</h3>
+        <p>10 kamar Superior, dua ruang pertemuan modular, gudang linen, dan depot housekeeping.</p>
+        <strong>10 Kamar</strong>
+      </div>
+      <div class="floor">
+        <div class="number">LEVEL 3–4</div>
+        <h3>Typical Guestroom</h3>
+        <p>Kamar hotel 14–16 m² bersih dengan kamar mandi dalam, koridor, dan area servis.</p>
+        <strong>30 Kamar</strong>
+      </div>
+      <div class="floor">
+        <div class="number">LEVEL 5–7</div>
+        <h3>Typical Guestroom</h3>
+        <p>Pengulangan desain lantai tipikal dengan 15 kamar per lantai.</p>
+        <strong>45 Kamar</strong>
+      </div>
+      <div class="floor">
+        <div class="number">ROOFTOP</div>
+        <h3>Area Teknis</h3>
+        <p>Tangki air atap, platform kondensor HVAC, dan fasilitas pemeliharaan lift sesuai sistem yang dipilih.</p>
+        <strong>MEP Support</strong>
+      </div>
+    </div>
+    <div class="notice">
+      Catatan: Luas lahan 400 m² dan luas lantai merupakan data dasar perencanaan.
+      Kapasitas parkir, jumlah kamar, luas efektif, dan kesesuaian bangunan
+      wajib diverifikasi dalam DED, kajian struktur, serta perizinan.
+    </div>
+  </div>
+</section>
+
+<section id="capex">
+  <div class="container">
+    <div class="section-tag">03 — Capital Expenditure</div>
+    <h2 class="section-title">Rencana Anggaran Pembangunan</h2>
+    <p class="section-desc">
+      Anggaran perencanaan pembangunan Cosdotel Foresyndo 2
+      berdasarkan paket pekerjaan yang disampaikan owner.
+    </p>
+    <div class="capex-wrap">
+      <table>
+        <thead>
+          <tr><th>No.</th><th>Paket pekerjaan</th><th>Anggaran IDR</th><th>USD</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>01</td><td>Substruktur & basement civil works</td><td>Rp2.500.000.000</td><td>$151.515</td></tr>
+          <tr><td>02</td><td>Superstructure lantai 1–7</td><td>Rp5.500.000.000</td><td>$333.333</td></tr>
+          <tr><td>03</td><td>Arsitektur & external façade</td><td>Rp3.650.000.000</td><td>$221.212</td></tr>
+          <tr><td>04</td><td>MEP & vertical transportation</td><td>Rp3.850.000.000</td><td>$233.333</td></tr>
+          <tr><td>05</td><td>Interior & FF&E 85 kamar</td><td>Rp2.890.000.000</td><td>$175.152</td></tr>
+          <tr><td>06</td><td>Lobby, café & meeting rooms</td><td>Rp860.000.000</td><td>$52.121</td></tr>
+          <tr><td>07</td><td>Perizinan, desain & engineering</td><td>Rp750.000.000</td><td>$45.455</td></tr>
+          <tr><td>08</td><td>Contingency reserve</td><td>Rp1.000.000.000</td><td>$60.606</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">TOTAL CAPEX</td><td>Rp21.000.000.000</td><td>$1.272.727</td></tr>
+        </tfoot>
+      </table>
+    </div>
+    <p class="note">Kurs perencanaan: USD 1 = IDR 16.500. Anggaran merupakan pagu awal, bukan penawaran kontraktor atau RAB hasil pengukuran DED.</p>
+  </div>
+</section>
+
+<section style="background:#fff" id="keuangan">
+  <div class="container">
+    <div class="section-tag">04 — Financial Projection</div>
+    <h2 class="section-title">Proyeksi Keuangan Hotel</h2>
+    <p class="section-desc">
+      Model dasar menggunakan ADR Rp380.000, okupansi 60% pada Tahun 1,
+      70% Tahun 2, dan 75% mulai Tahun 3.
+    </p>
+    <div class="fin-grid">
+      <div class="fin-card">
+        <small>Gross Revenue Stabil</small>
+        <strong>USD 610.912</strong>
+        <p>Per tahun pada okupansi 75%.</p>
+      </div>
+      <div class="fin-card">
+        <small>Net Operating Cash Flow</small>
+        <strong>USD 301.058</strong>
+        <p>Estimasi arus kas operasi bersih tahunan.</p>
+      </div>
+      <div class="fin-card">
+        <small>Payback Model Awal</small>
+        <strong>4,5 Tahun</strong>
+        <p>Interpolasi arus kas kumulatif Tahun 5.</p>
+      </div>
+    </div>
+
+    <div class="chart-box">
+      <h3>Pendapatan Kotor per Tahun (USD)</h3>
+      <div class="bars" id="revenueChart"></div>
+      <p class="note">Grafik menggunakan proyeksi pendapatan kotor dari model awal. Nilai dapat berubah mengikuti hasil validasi keuangan.</p>
+    </div>
+
+    <div class="chart-box">
+      <h3>Arus Kas Bersih Operasi (USD)</h3>
+      <div class="bars" id="cashChart"></div>
+    </div>
+
+    <div style="margin-top:35px" class="capex-wrap">
+      <table>
+        <thead><tr><th>Komponen</th><th>Tahun 1</th><th>Tahun 2</th><th>Tahun 3</th><th>Tahun 4</th><th>Tahun 5</th></tr></thead>
+        <tbody>
+          <tr><td>Okupansi</td><td>60%</td><td>70%</td><td>75%</td><td>75%</td><td>75%</td></tr>
+          <tr><td>Room nights</td><td>18.615</td><td>21.718</td><td>23.269</td><td>23.269</td><td>23.269</td></tr>
+          <tr><td>Gross Revenue</td><td>$488.723</td><td>$570.190</td><td>$610.912</td><td>$610.912</td><td>$610.912</td></tr>
+          <tr><td>Operating Expenses</td><td>$215.038</td><td>$250.884</td><td>$268.801</td><td>$268.801</td><td>$268.801</td></tr>
+          <tr><td>GOP</td><td>$273.685</td><td>$319.306</td><td>$342.111</td><td>$342.111</td><td>$342.111</td></tr>
+          <tr><td>Tax & FF&E Reserve</td><td>$32.842</td><td>$38.317</td><td>$41.053</td><td>$41.053</td><td>$41.053</td></tr>
+          <tr><td><b>Net Cash Flow</b></td><td><b>$240.843</b></td><td><b>$280.989</b></td><td><b>$301.058</b></td><td><b>$301.058</b></td><td><b>$301.058</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Model dalam USD. Konversi rupiah menggunakan kurs tetap Rp16.500/USD. Belum memperhitungkan seluruh kemungkinan biaya pembiayaan dan pajak aktual.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-tag">05 — Investment Analysis</div>
+    <h2 class="section-title">Indikator Investasi</h2>
+    <div class="fin-grid">
+      <div class="fin-card">
+        <small>ROI Tahunan Rata-rata</small>
+        <strong>22,39%</strong>
+        <p>Klaim model awal berdasarkan rata-rata arus kas 5 tahun.</p>
+      </div>
+      <div class="fin-card">
+        <small>IRR 10 Tahun</small>
+        <strong>19,80%</strong>
+        <p>Target model awal; perlu arus kas Tahun 6–10 dan nilai terminal.</p>
+      </div>
+      <div class="fin-card">
+        <small>BEP Okupansi</small>
+        <strong>19,1%</strong>
+        <p>Estimasi BEP operasional berdasarkan fixed overhead dan margin kontribusi yang diberikan.</p>
+      </div>
+    </div>
+
+    <div class="sensitivity" style="margin-top:30px">
+      <div class="scenario highlight">
+        <h3>Base Case</h3>
+        <div class="scenario-row"><span>Okupansi</span><strong>75%</strong></div>
+        <div class="scenario-row"><span>ADR</span><strong>USD 23,03</strong></div>
+        <div class="scenario-row"><span>Gross Revenue</span><strong>$610.912</strong></div>
+        <div class="scenario-row"><span>Net Cash Flow</span><strong>$301.058</strong></div>
+        <div class="scenario-row"><span>Payback</span><strong>4 thn 6 bln</strong></div>
+        <div class="scenario-row"><span>ROI</span><strong>22,39%</strong></div>
+      </div>
+      <div class="scenario">
+        <h3>Conservative Case</h3>
+        <div class="scenario-row"><span>Okupansi</span><strong>50%</strong></div>
+        <div class="scenario-row"><span>ADR</span><strong>USD 20,00</strong></div>
+        <div class="scenario-row"><span>Gross Revenue</span><strong>$347.491</strong></div>
+        <div class="scenario-row"><span>Net Cash Flow</span><strong>$162.626</strong></div>
+        <div class="scenario-row"><span>Payback</span><strong>7 thn 10 bln</strong></div>
+        <div class="scenario-row"><span>ROI</span><strong>12,78%</strong></div>
+      </div>
+    </div>
+    <div class="notice">
+      DISCLAIMER: Seluruh ROI, IRR, payback, dan BEP adalah proyeksi berdasarkan
+      asumsi yang diberikan, bukan jaminan keuntungan. IRR 10 tahun belum
+      diverifikasi karena arus kas Tahun 6–10 dan nilai terminal belum tersedia.
+      Analisis BEP harus direkonsiliasi dengan model OPEX untuk menghindari
+      penghitungan biaya ganda.
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff">
+  <div class="container two-col">
+    <div>
+      <div class="section-tag">06 — Project Execution</div>
+      <h2 class="section-title">Tahapan Pelaksanaan</h2>
+      <p class="section-desc">Pelaksanaan proyek mengikuti tahapan konstruksi, pengujian, dan persiapan operasional.</p>
+      <div class="timeline">
+        <div class="timeline-item"><h3>01. Perencanaan & Perizinan</h3><p>DED, survei geoteknik, PBG, dokumen lingkungan, dan tender kontraktor.</p></div>
+        <div class="timeline-item"><h3>02. Basement & Substruktur</h3><p>Retaining system, galian, dewatering, pondasi, dan struktur basement.</p></div>
+        <div class="timeline-item"><h3>03. Struktur & Fasad</h3><p>Pekerjaan struktur lantai 1–7, dinding, atap, dan eksterior.</p></div>
+        <div class="timeline-item"><h3>04. MEP & Interior</h3><p>Lift, listrik, plumbing, HVAC, kamar, restoran, dan ruang pertemuan.</p></div>
+        <div class="timeline-item"><h3>05. Commissioning</h3><p>Pengujian sistem, pemeriksaan laik fungsi, pelatihan, dan pembukaan hotel.</p></div>
+      </div>
+    </div>
+    <div>
+      <div class="section-tag">07 — Risk Management</div>
+      <h2 class="section-title">Pengendalian Risiko</h2>
+      <div class="risk-grid" style="grid-template-columns:1fr">
+        <div class="risk"><h3>Risiko Struktur & Tanah</h3><p>Investigasi tanah, desain geoteknik, sistem penahan galian, dan dewatering.</p></div>
+        <div class="risk"><h3>Risiko Anggaran</h3><p>Kontrol BOQ, persetujuan perubahan, pengadaan material, dan cadangan kontingensi.</p></div>
+        <div class="risk"><h3>Risiko Operasional</h3><p>Kontrol payroll, energi, pemeliharaan, distribusi kamar, dan pemasaran.</p></div>
+        <div class="risk"><h3>Risiko Perizinan</h3><p>Pemenuhan PBG, SLF, persyaratan lingkungan, kebakaran, dan keselamatan bangunan.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kontak">
+  <div class="container">
+    <div class="contact">
+      <div>
+        <div class="eyebrow">Project Owner</div>
+        <h2>PT. FORESYNDO GLOBAL INDONESIA</h2>
+        <p>Direktur Utama: Hasanudin</p>
+        <p>Blok Senin, Desa Jatitujuh, Kecamatan Jatitujuh,<br>Kabupaten Majalengka, Jawa Barat.</p>
+      </div>
+      <button class="btn btn-gold" onclick="window.print()">Cetak Proposal / PDF ↗</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong>FORESYNDO 2</strong><br>Investment & Development Proposal</div>
+    <div>© 2026 PT. Foresyndo Global Indonesia<br>Dokumen perencanaan dan estimasi investasi.</div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+document.querySelectorAll('.nav-links a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+const revenue=[
+  {label:'Tahun 1',value:488723},
+  {label:'Tahun 2',value:570190},
+  {label:'Tahun 3',value:610912},
+  {label:'Tahun 4',value:610912},
+  {label:'Tahun 5',value:610912}
+];
+const cash=[
+  {label:'Tahun 1',value:240843},
+  {label:'Tahun 2',value:280989},
+  {label:'Tahun 3',value:301058},
+  {label:'Tahun 4',value:301058},
+  {label:'Tahun 5',value:301058}
+];
+
+function renderBars(id,data){
+  const root=document.getElementById(id);
+  const max=Math.max(...data.map(x=>x.value));
+  data.forEach(item=>{
+    const col=document.createElement('div');
+    col.className='bar-col';
+    const val=document.createElement('div');
+    val.className='bar-value';
+    val.textContent='$'+Math.round(item.value/1000)+'k';
+    const bar=document.createElement('div');
+    bar.className='bar';
+    bar.style.height=(item.value/max*75)+'%';
+    bar.title='$'+item.value.toLocaleString('en-US');
+    const label=document.createElement('div');
+    label.className='bar-label';
+    label.textContent=item.label;
+    col.append(val,bar,label);
+    root.appendChild(col);
+  });
+}
+renderBars('revenueChart',revenue);
+renderBars('cashChart',cash);
+</script>
+</body>
+</html>
